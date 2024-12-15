@@ -1,0 +1,81 @@
+.sticky-nav {
+    position: fixed;
+    top: 3.5em;
+    left: 6em;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 5px 18px;    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    overflow: hidden; /* Ensure content is clipped */
+    width: calc(100% - 8em); /* Adjust width if necessary */
+  }
+  
+  .nav-links {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    white-space: nowrap;
+    flex-grow: 1;
+  }
+
+  .nav-link:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.1); /* Grows smoothly on hover */
+
+  }
+  
+  .nav-links {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    white-space: nowrap;
+    flex-grow: 1;
+    scroll-behavior: smooth;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #262626;
+    background-color: #e2e1e1;
+    padding: 11px 10px;
+    border-radius: 13px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #e6e6e6;
+    transform: scale(1.05); /* Grows smoothly on hover */
+
+  }
+  
+  .prev-button,
+  .next-button {
+    background-color: rgba(202, 200, 200, 0.1);
+    color: #3f3f3f;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    transition: 0.2s ease, transform 0.2s ease;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: rgba(179, 178, 178, 0.2);
+    transform: scale(1.1);
+  }
+  
+  .prev-button:active,
+  .next-button:active {
+    transform: scale(0.95);
+  }
+  

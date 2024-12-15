@@ -1,0 +1,45 @@
+.header {
+  position: fixed;
+  /* Sticks the navbar to the top */
+  top: 0;
+  /* Ensures it stays at the top */
+  left: 0;
+  width: 100%;
+  /* Full width */
+  height: 55px;
+  /* Adjust the height as needed */
+  background-color: #fff;
+  /* Background color */
+  display: flex;
+  justify-content: space-between;
+  /* Space between start, center, and end */
+  align-items: center;
+  padding: 0 1rem;
+  /* Padding for spacing */
+  z-index: 1000;
+  /* Keeps it above other elements */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  /* Optional shadow */
+}
+
+.header-start,
+.header-center,
+.header-end {
+  display: flex;
+  align-items: center;
+}
+.header-end{
+gap: 30px;
+}
+
+.create-icon {
+  font-size: 1.5rem;
+  padding: 5px;
+  cursor: pointer;
+  color: #213547;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: medium;
+  text-transform: none;
+  background-color: rgb(228, 228, 228);
+}

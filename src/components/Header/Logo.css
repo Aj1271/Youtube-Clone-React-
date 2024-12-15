@@ -1,0 +1,21 @@
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  .logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .logo-subtext {
+    font-size: 0.8rem;
+    color: #606060;
+    margin-left: 0.2rem;
+  }
+  

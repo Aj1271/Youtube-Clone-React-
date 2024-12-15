@@ -1,0 +1,92 @@
+.sidebar-header {
+  display: flex;          /* Use Flexbox to align children in a row */
+  justify-content: space-between; /* Optional: Adds space between Logo and Hamburger */
+  align-items: center;    /* Vertically aligns items */
+  padding: 10px;          /* Adjust padding as needed */
+}
+
+.hamburger-menu {
+  width: 20px; /* Fixed size */
+  height: 20px;
+  padding: 5px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.hamburger-menu:hover {
+  background-color: #e3e2e2;
+  transform: scale(1.2); /* Grows smoothly on hover */
+  border-radius: 50%;
+  cursor: pointer;
+}
+.H-Sbar {
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: -230px;
+  width: 200px; /* Adjust width to fit content */
+  height: 100vh;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: left 0.3s ease-in-out;
+  padding: 15px;
+  z-index: 1001;
+}
+
+.H-Sbar.open {
+  left: 0; /* Slides in when open */
+}
+
+.H-Sbar-section {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+.H-Sbar-section :hover{
+  border-radius: 7px;
+  background-color: rgb(227, 227, 227);
+}
+
+.menu-item {
+  display: flex; /* Align icon and text in a row */
+  align-items: center; /* Vertically center */
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.menu-item svg {
+  font-size: 20px; /* Adjust icon size */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.menu-item h4 {
+  font-size: 18px;
+  margin: 0; /* Remove default margins for text */
+}
+
+.divider {
+  border-top: 1px solid #444;
+  margin: 10px 0;
+}
+
+.H-Sbar-section:last-child {
+  margin-top: auto; /* Pushes the last section to the bottom */
+}
+.hamburger-container {
+  position: relative;
+}
+
+.hamburger-container.blur-background > *:not(.H-Sbar):not(.overlay) {
+  filter: blur(5px);
+  pointer-events: none; /* Prevent interactions with blurred content */
+}
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1001; /* Behind the sidebar */
+}

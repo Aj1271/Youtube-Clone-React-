@@ -1,0 +1,23 @@
+.sidebar-item {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
+  }
+  
+  .sidebar-item i {
+    font-size: 24px; /* Adjust icon size */
+    margin-bottom: 5px; /* Space between icon and text */
+  }
+  
+  .sidebar-label {
+    font-size: 14px; /* Adjust text size */
+    color: #606060; /* Neutral color for text */
+  }
+  

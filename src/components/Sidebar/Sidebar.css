@@ -1,0 +1,16 @@
+.sidebar {
+  width: 100px;
+  background-color: #fff;
+  /* padding-top: 80px; Matches the header's height */
+  position: fixed;
+  top: 3.5em; /* Sidebar starts from the top of the viewport */
+  left: -5px;
+  height: 100vh;
+  color: black;
+  z-index: 900; /* Below header */
+  justify-content: space-between;
+}
+.sidebar :hover {
+  background-color: #ebe9e9;
+  border-radius: 10px;
+}
